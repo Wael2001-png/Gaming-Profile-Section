@@ -1,0 +1,252 @@
+* {
+    text-transform: capitalize;
+}
+.container {
+    background-color: #F4F4F4;
+    margin: 2% auto;
+    padding: 1.5% 2% 2.5%;
+    width: 80%;
+}
+
+aside {
+    background-image: url(../My_Picture.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 4px #ddd;
+    margin: auto;
+}
+
+.container > div {
+    display: flex;
+    margin-bottom: 1%;
+    background-color: white;
+    flex-direction: column;
+}
+
+.container div:first-child {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: inherit;
+}
+
+.container div div:first-child {
+    text-align: center;
+    padding: 2%;
+    width: 20%;
+    background-color: white;
+}
+
+.container div div:first-child * {
+    margin-bottom: 3%;
+}
+
+.container div div:first-child .level {
+    width: 100%;
+    height: 17px;
+    background-color: #F4F4F4;
+    border-radius: 12px;
+    position: relative;
+}
+
+.container div div:first-child .level span {
+    background-color: #009688;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px 0 0 12px;
+}
+
+.container div div:first-child p {
+    position: relative;
+    font-size: 0.9vw;
+}
+
+.container div div:first-child p::before {
+    content: '25';
+    color: #009688;
+    font-size: revert;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.container div div:last-child {
+    width: 79.7%;
+    background-color: white;
+    padding: 1.5%;
+    position: relative;
+}
+
+.container div div:last-child h1 {
+    margin-bottom: 2%;
+    font-family: system-ui;
+}
+
+.container div div:last-child p {
+    line-height: 30px;
+    color: rgb(166, 166, 177);
+}
+
+.container div:first-of-type div:last-child::after {
+    content: '140 days in the ships';
+    color: rgb(166, 166, 177);
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    font-family: sans-serif;
+}
+
+.container div:not(:first-child) {
+    padding: 2%;
+}
+
+.container div:not(:first-child) h2 {
+    background-color: #607D8B;
+    color: white;
+    width: fit-content;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.container div:not(:first-child) p {
+    color: rgb(166, 166, 177);
+    position: relative;
+    margin-bottom: 2%;
+}
+@media (min-width: 800px) and (max-width: 900px) {
+    .container div:first-child {
+        flex-direction: column-reverse;
+    }
+    .container div div:first-child,
+    .container div div:first-child .level {
+        width: 96%;
+    }
+    .container div div:first-child p {
+        font-size: initial;
+    }
+    .container div div:last-child {
+        width: 97%;
+        height: 26vh;
+        margin-bottom: 1%;
+    }
+}
+@media (max-width: 799px) {
+    .container div:first-child {
+        flex-direction: column-reverse;
+    }
+    .container div div:first-child,
+    .container div div:first-child .level {
+        width: 96%;
+    }
+    .container div div:first-child p {
+        font-size: initial;
+    }
+    .container div div:last-child {
+        width: 97%;
+        height: 50vh;
+        margin-bottom: 1%;
+    }
+}
+.container > div:nth-of-type(2) p:first-of-type::after,
+.container div:last-of-type p:not(:last-of-type):after {
+    content: '';
+    position: absolute;
+    bottom: -58%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+}
+
+.container div:not(:first-child) p .blue {
+    color: #009688;
+    font-weight: bold;
+}
+
+.container div:not(:first-child) p .red {
+    color: #E92F63;
+    font-weight: bold;
+}
+
+.container > div:nth-of-type(3) div {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 4% 1%;
+    padding: 0;
+    width: 100%;
+}
+
+.container > div:nth-of-type(3) div nav {
+    background-image: url(../Images/mmm.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 96px;
+} 
+
+.container > div:nth-of-type(3) div nav:nth-of-type(1) {
+    background-image: url(../Images/Den.jpg);
+}
+.container > div:nth-of-type(3) div nav:nth-of-type(2) {
+    background-image: url(../Images/Eren2.jpg);
+}
+.container > div:nth-of-type(3) div nav:nth-of-type(3) {
+    background-image: url(../Images/Eren2.jpg);
+}
+.container > div:nth-of-type(3) div nav:nth-of-type(4) {
+    background-image: url(../Images/Eren2.jpg);
+}
+.container > div:nth-of-type(3) div nav:nth-of-type(5) {
+    background-image: url(../Images/Luffy.jpg);
+}
+.container > div:nth-of-type(3) div nav:nth-of-type(6) {
+    background-image: url(../Images/Luffy.jpg);
+}
+.container > div:nth-of-type(3) div nav:nth-of-type(7) {
+    background-image: url(../Images/Luffy.jpg);
+}
+.container > div:nth-of-type(3) div nav:nth-of-type(8) {
+    background-image: url(../Images/Ray.jpg);
+}
+.container > div:nth-of-type(3) div nav:nth-of-type(9) {
+    background-image: url(../Images/Ray.jpg);
+}
+.container > div:nth-of-type(3) div nav:nth-of-type(10) {
+    background-image: url(../Images/Ray.jpg);
+}
+@media (max-width: 900px) {
+    .container > div:nth-of-type(3) {
+        display: none;
+    }
+}
+@media (min-width: 1300px) {
+    .container > div:nth-of-type(3) div nav {
+        background-size: cover;
+        width: calc(100% - 15%);
+        height: 120px;
+    }
+}
+.container > div:last-of-type p {
+    position: relative;
+}
+
+.container > div:last-of-type p::before {
+    content: 'yes';
+    color: #519320;
+    position: absolute;
+    right: 0;
+    font-weight: bolder;
+}
+
+.container > div:last-of-type p:last-of-type::before {
+    content: 'no';
+    color: #E92F63;
+    position: absolute;
+    right: 0;
+    font-weight: bolder;
+}
